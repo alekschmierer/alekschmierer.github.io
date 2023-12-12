@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 /* The side navigation menu */
 .sidebar {
     margin: 0;
