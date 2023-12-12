@@ -106,8 +106,13 @@
 
 /* Style for sidebar */
 .sidebar {
-  position: relative; /* Add this */
-  height: 100vh; /* Add this */
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  /* overflow: auto; Remove this line */
 }
 
 /* Style for location and graduation */
