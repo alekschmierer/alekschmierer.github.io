@@ -1,0 +1,112 @@
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    filter: invert(1);
+    background-color: #fb8955;
+  }
+
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    filter: invert(1);
+  }
+
+  /* Emoji Home */
+  a.active::before {
+    content: "";
+    display: inline-block;
+    height:17px;
+    width: 17px;
+    background-image: url('home-button.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+  }
+
+  /* Emoji Resume */
+  a.resume::before {
+    content: "";
+    display: inline-block;
+    height:20px;
+    width: 15px;
+    background-image: url('paper-note.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+  }
+
+  /* Emoji Hammer */
+  a.projects::before {
+    content : "";
+    display: inline-block;
+    height:20px;
+    width: 15px;
+    background-image: url('hammer.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+  }
+
+   /* Emoji Hammer */
+   a.contact::before {
+    content : "";
+    display: inline-block;
+    height:20px;
+    width: 15px;
+    background-image: url('mail.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  /*@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  /*@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
