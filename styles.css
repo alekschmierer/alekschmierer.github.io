@@ -104,9 +104,15 @@
   text-align: center;
 }
 
+/* Style for sidebar */
+.sidebar {
+  position: relative; /* Add this */
+  height: 100vh; /* Add this */
+}
+
 /* Style for location and graduation */
 .sidebar .bottom {
-  position: absolute;
+  position: sticky; /* Change from absolute to sticky */
   bottom: 0;
   width: 100%;
 }
@@ -115,6 +121,7 @@
   padding-top:10px;
   text-align: left;
 }
+
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
