@@ -116,10 +116,10 @@
 
 /* Style for location and graduation */
 .sidebar .bottom {
-  position: sticky; /* Stick to the bottom */
+  position: absolute; /* Stick to the bottom */
   bottom: 0;
   width: 100%;
-  padding: 10px 0; /* Add padding */
+  padding: -1000px 0; /* Add padding */
 } 
 
 .sidebar .location p, .sidebar .graduation p {
