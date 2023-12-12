@@ -16,21 +16,21 @@
     padding: 16px;
     text-decoration: none;
   }
-  
+
   /* Active/current link */
-  .sidebar a.active {
+  .sidebar a.current {
     filter: invert(1);
     background-color: #fb8955;
   }
 
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
+/* Links on mouse-over */
+.sidebar a:hover.current1 {
     background-color: #555;
     filter: invert(1);
   }
 
   /* Emoji Home */
-  a.active::before {
+  a.index::before {
     content: "";
     display: inline-block;
     height:17px;
@@ -84,6 +84,24 @@
     position: relative;
     top: 7px;
   }
+
+  /* Style for profile picture */
+  .sidebar .profile {
+  background: url('IMG_0982.PNG') no-repeat center;
+  background-size: cover;
+  background-position: top;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  margin-left: 42px;
+  margin-bottom: 100px;
+}
+
+/* Style for name */
+.sidebar .profile p {
+  padding-top:125px;
+  text-align: center;
+}
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
