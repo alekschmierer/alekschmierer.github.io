@@ -116,10 +116,9 @@
 
 /* Style for location and graduation */
 .sidebar .bottom {
-  position: absolute; /* Stick to the bottom */
-  bottom: 0;
+  position: absolute;
+  bottom:0;
   width: 100%;
-  padding: -1000px 0; /* Add padding */
 } 
 
 .sidebar .location p, .sidebar .graduation p {
