@@ -103,6 +103,18 @@
   padding-top:125px;
   text-align: center;
 }
+
+/* Style for location and graduation */
+.sidebar .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.sidebar .location p, .sidebar .graduation p {
+  padding-top:10px;
+  text-align: left;
+}
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
   div.content {
