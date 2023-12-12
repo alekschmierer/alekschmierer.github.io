@@ -1,7 +1,3 @@
-body {
-  overflow: hidden;
-}
-
 /* The side navigation menu */
 .sidebar {
     margin: 0;
@@ -112,47 +108,29 @@ body {
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
   background-color: #f1f1f1;
   position: fixed;
-  height: 100%;
+  overflow: auto;
 }
 
 /* Style for location and graduation */
 .sidebar .bottom {
-  position: absolute;
-  bottom:0;
-  width: 100%;
-} 
-
-.sidebar .location p, .sidebar .graduation p {
-  padding-top:10px;
+  position: fixed;
+  bottom: 0;
+  width: 200px;
+  background-color: #f1f1f1;
   text-align: left;
 }
 
+.sidebar .location p, .sidebar .graduation p {
+  padding: 10px;
+  margin: 0;
+}
+
   
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-  
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  /*@media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  /*@media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
