@@ -112,12 +112,11 @@
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
-  /* overflow: auto; Remove this line */
 }
 
 /* Style for location and graduation */
-.sidebar .location, .sidebar .graduation {
-  position: absolute; /* Stick to the bottom */
+.sidebar .bottom {
+  position: sticky; /* Stick to the bottom */
   bottom: 0;
   width: 100%;
   padding: 10px 0; /* Add padding */
