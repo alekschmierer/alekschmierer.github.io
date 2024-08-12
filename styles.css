@@ -71,8 +71,8 @@
     top: 7px;
   }
 
-   /* Emoji Hammer */
-   a.contact::before {
+  /* Emoji Mail */
+  a.contact::before {
     content : "";
     display: inline-block;
     height:20px;
@@ -128,7 +128,7 @@
 }
 
   
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+/* Sidebar's  property */
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
