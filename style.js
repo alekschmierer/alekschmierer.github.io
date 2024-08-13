@@ -18,3 +18,12 @@ for (var i = 0; i < sidebarLinks.length; i++) {
   });
 }
 
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+
