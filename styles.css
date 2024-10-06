@@ -53,9 +53,37 @@ nav ul li a {
   margin-left: 20px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px auto;
+  width: 1000px; /* Total width of the two sections combined */
+}
+
 .skills {
   text-align: center;
-  margin: 40px 0;
+  width: 944px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills h2 {
+  margin-bottom: 10px;
+}
+
+.skills .line {
+  width: 944px;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.skill-icons {
+  margin-top: 10px;
 }
 
 .skill-icons img {
@@ -67,14 +95,13 @@ nav ul li a {
   background-color: #F7F7F7;
   padding: 20px;
   border-radius: 10px;
-  width: 60%;
-  margin: 0 auto;
   text-align: left;
 }
 
 .projects {
   text-align: center;
-  margin: 40px 0;
+  width: 576px;
+  height: 500px;
 }
 
 .project img {
