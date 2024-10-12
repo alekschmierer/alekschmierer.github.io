@@ -31,82 +31,145 @@ nav ul li a {
 }
 
 .intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 0;
-  padding: 20px;
   background-color: #F7F7F7;
+  padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  margin: 20px auto;
+  flex-grow: 1;  
+}
+
+.profile-container {
+  display: flex;  /* Make the container a flexbox */
+  align-items: center;  /* Vertically align image and text */
+  justify-content: flex-start;  /* Horizontally align image and text */
+  margin: 40px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1344px;
+}
+
+.profile-pic {
+  margin-right: 20px;
 }
 
 .profile-pic img {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 266px;
+  height: 266px;
   object-fit: cover;
+  object-position: 0% 0%;
 }
 
 .intro-text {
-  margin-left: 20px;
+  flex-grow: 1;
+  font-size: 30px;
 }
 
-.container {
+/* Flex container for Skills and Recent Project sections */
+.main-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   margin: 40px auto;
-  width: 1000px; /* Total width of the two sections combined */
+  width: 100%; /* Ensure full width */
+  max-width: 1344px; /* Maximum width */
+  padding: 20px;
+}
+
+.content-container {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Space between items */
+  margin: 40px auto; /* Center the container */
+  max-width: 1344px; /* Ensure it doesn't exceed the max width */
+  width: 100%; /* Full width */
 }
 
 .skills {
-  text-align: center;
-  width: 944px;
-  height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start; 
 }
 
-.skills h2 {
-  margin-bottom: 10px;
+.skill-text {
+  display: flex;
+  align-items: center; 
+  width: 100%; 
 }
 
-.skills .line {
-  width: 944px;
-  height: 2px;
-  background-color: black;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-
-.skill-icons {
-  margin-top: 10px;
-}
-
-.skill-icons img {
-  width: 50px;
-  margin: 10px;
+.skill-text h2 {
+  font-size: 48px; 
+  color: #2C2C2C;
+  margin-top: 20px; 
 }
 
 .skills-list {
-  background-color: #F7F7F7;
+  text-align: left; 
+  width: 944px; 
+  height: 386px; 
+  background-color: #F7F7F7; 
+  border-radius: 10px; 
   padding: 20px;
-  border-radius: 10px;
-  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  margin-top: 25px;
 }
+
+.skill-languages,
+.skill-pro-technologies,
+.skill-creative-technologies {
+  margin-bottom: 55px;
+  font-weight: bold; 
+}
+
+.skill-icons img {
+  width: 60px;
+  align-items: center; 
+  margin-left: 25px; 
+}
+
+.skills-list h3 {
+  font-size: 24px; 
+  color: #1D1D1D;
+  font-weight: bold;
+}
+
+.skills-list p {
+  font-size: 20px; 
+  color: #575757;
+}
+
+.skills-list ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.skills-list li {
+  margin: 5px 0; 
+  font-size: 18px; 
+}
+
 
 .projects {
   text-align: center;
-  width: 576px;
-  height: 500px;
+  margin-top: 25px;
+  margin-left: 133px;
 }
 
 .project img {
-  width: 300px;
+  width: 576px;
+  height: 386px;
   border-radius: 10px;
+}
+
+.project-text {
+  display: flex;
+  align-items: center; 
+  width: 100%;
+}
+
+.projects h2 {
+  font-size: 48px; /* Same font size as Skills */
+  color: #2C2C2C; /* Same color as Skills */
+  margin-top: 20px; /* Consistent margin */
+  margin-bottom: 10px; /* Spacing below the heading */
 }
 
 .project p {
