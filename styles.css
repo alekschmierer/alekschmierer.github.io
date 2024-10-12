@@ -166,10 +166,10 @@ nav ul li a {
 }
 
 .projects h2 {
-  font-size: 48px; /* Same font size as Skills */
-  color: #2C2C2C; /* Same color as Skills */
-  margin-top: 20px; /* Consistent margin */
-  margin-bottom: 10px; /* Spacing below the heading */
+  font-size: 48px;
+  color: #2C2C2C;
+  margin-top: 20px; 
+  margin-bottom: 10px; 
 }
 
 .project p {
