@@ -67,7 +67,7 @@ nav ul li a {
 /* Flex container for Skills and Recent Project sections */
 .main-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 40px auto;
   width: 100%; /* Ensure full width */
   max-width: 1344px; /* Maximum width */
