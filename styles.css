@@ -38,9 +38,9 @@ nav ul li a {
 }
 
 .profile-container {
-  display: flex;  /* Make the container a flexbox */
-  align-items: center;  /* Vertically align image and text */
-  justify-content: flex-start;  /* Horizontally align image and text */
+  display: flex;  
+  align-items: center; 
+  justify-content: flex-start;  
   margin: 40px;
   padding: 20px;
   width: 100%;
@@ -64,28 +64,30 @@ nav ul li a {
   font-size: 30px;
 }
 
-/* Flex container for Skills and Recent Project sections */
 .main-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between; /* Ensure Skills and Recent Projects are aligned horizontally */
+  align-items: flex-start; /* Align both sections at the top */
   margin: 40px auto;
-  width: 100%; /* Ensure full width */
-  max-width: 1344px; /* Maximum width */
+  max-width: 1344px;
   padding: 20px;
+  width: 100%;
 }
 
 .content-container {
-  display: flex; /* Use flexbox */
-  justify-content: space-between; /* Space between items */
-  margin: 40px auto; /* Center the container */
-  max-width: 1344px; /* Ensure it doesn't exceed the max width */
-  width: 100%; /* Full width */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between; /* Space items evenly */
+  margin: 40px auto;
+  max-width: 1344px;
+  width: 100%;
 }
 
 .skills {
+  flex: 2; /* Give Skills more space compared to Recent Projects */
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
 }
 
 .skill-text {
@@ -101,13 +103,12 @@ nav ul li a {
 }
 
 .skills-list {
-  text-align: left; 
-  width: 944px; 
-  height: 386px; 
-  background-color: #F7F7F7; 
-  border-radius: 10px; 
+  text-align: left;
+  width: 100%; /* Skills section spans its allocated width */
+  background-color: #F7F7F7;
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 25px;
 }
 
@@ -148,14 +149,17 @@ nav ul li a {
 
 
 .projects {
-  text-align: center;
-  margin-top: 25px;
-  margin-left: 133px;
+  flex: 1; /* Allocate remaining space to Recent Projects */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the left */
+  margin-left: 40px; /* Space between Skills and Recent Projects */
 }
 
 .project img {
-  width: 576px;
-  height: 386px;
+  width: 100%; /* Ensure the image takes the full width of the container */
+  max-width: 576px; /* Limit the max width */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 10px;
 }
 
@@ -168,8 +172,8 @@ nav ul li a {
 .projects h2 {
   font-size: 48px;
   color: #2C2C2C;
-  margin-top: 20px; 
-  margin-bottom: 10px; 
+  margin-top: 0; /* Align with Skills section */
+  margin-bottom: 20px;
 }
 
 .project p {
