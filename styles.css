@@ -35,9 +35,9 @@ nav ul li a {
 }
 
 .profile-container {
-  display: flex;  /*flexbox*/
-  align-items: center;  /* Vertically align image and text */
-  justify-content: flex-start;  /* Horizontally align image and text */
+  display: flex;  
+  align-items: center; 
+  justify-content: flex-start;  
   margin: 40px;
   padding: 20px;
   width: 100%;
@@ -61,7 +61,7 @@ nav ul li a {
   font-size: 30px;
 }
 
-/* Flex container for Skills and Recent Project sections 
+/* Flex container for Skills and Recent Project sections */
 .main-container {
   display: flex;
   justify-content: flex-start;
@@ -70,25 +70,13 @@ nav ul li a {
   max-width: 1344px; 
   padding: 20px;
 }
-*/
 
-/*
-.content-container {
-  display: flex;
-  justify-content: space-between; 
-  margin: 40px auto; 
-  max-width: 1344px; 
-  width: 100%; 
-}
-*/
-
-/*
 .skills {
   display: flex;
   flex-direction: column;
   align-items: flex-start; 
 }
-*/
+
 
 .skill-text {
   font-size: 48px; 
