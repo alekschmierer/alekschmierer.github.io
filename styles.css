@@ -65,7 +65,8 @@ nav ul li a {
 .main-container {
   display: flex;
   justify-content: flex-start; 
-  align-items: flex-start; 
+  align-items: flex-start;
+  flex-wrap: nowrap; 
   margin: 40px auto;
   width: 100%; 
   max-width: 1650px; 
@@ -146,4 +147,8 @@ nav ul li a {
   color: #2C2C2C;
   margin-top: 20px; 
   margin-bottom: 10px; 
+}
+
+.skills, .projects {
+  border: 2px solid red; 
 }
