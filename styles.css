@@ -1,0 +1,148 @@
+
+/*Setup*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Navigation Bar Section Only*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+header {
+  background-color: #2C2C2C;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*Profile Section Only*/
+.intro {
+  background-color: #F5F5F5;
+  padding: 60px;
+  border-radius: 10px;
+  flex-grow: 1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);   
+}
+
+.profile-container {
+  display: flex;
+  justify-content: flex-start;  
+  margin: auto;
+  padding: 100px;
+  width: 100%;
+  max-width: 1865px;
+}
+
+.profile-pic {
+  margin-right: 60px;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 266px;
+  height: 266px;
+  object-fit: cover;
+  object-position: 0% 0%;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text {
+  font-size: 30px;
+}
+
+/*Skills and Projects Section Only*/
+.skills-projects-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 1650px;
+}
+
+/*Skills Section Only*/
+.skill-text {
+  display: flex;
+  align-items: center; 
+}
+
+.skill-text h2 {
+  font-size: 48px; 
+  color: #2C2C2C;
+  margin-top: 20px; 
+}
+
+.skills-list {
+  text-align: left; 
+  width: 844px; 
+  height: 386px; 
+  background-color: #F5F5F5; 
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-languages,
+.skill-pro-technologies,
+.skill-creative-technologies {
+  margin-top: 5px;
+  margin-bottom: 90px;
+  font-weight: bold; 
+}
+
+.skill-languages p{
+  margin-top: 5px;
+}
+
+.skill-icons img {
+  width: 60px;
+  align-items: center; 
+  margin-left: 25px; 
+}
+
+.skills-list h3 {
+  font-size: 24px; 
+  color: #1D1D1D;
+  font-weight: bold;
+}
+
+.skills-list p {
+  font-size: 20px; 
+  color: #575757;
+}
+
+/*Projects Section Only*/
+.project img {  
+  width: 600px; 
+  height: 386px; 
+  margin-top: 23px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects h2 {
+  font-size: 48px;
+  color: #2C2C2C;
+  margin-top: 32px; 
+}

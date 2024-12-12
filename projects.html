@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+<!-- Main Content -->
+<div class="main-content">
+    <div class="box" id="group-projects">
+        <h2>Group Projects</h2>
+        <div class="image-container">
+            <div class="image-box" onclick="openModal('modal1')">
+                <img src="EffortLoggerImage.png" alt="Group Project 1">
+                <p class="center-text">EffortLogger</p>
+            </div>
+            <!-- Add more image-box divs as needed -->
+        </div>
+    </div>
+    <div class="box" id="personal-projects">
+        <h2>Personal/Class Projects</h2>
+        <div class="image-container">
+            <div class="image-box" onclick="openModal('modal4')">
+                <img src="dijkstras_algorithm_image.png" alt="Personal Project 1">
+                <p class="center-text">Dijkstra's Algorithm</p>
+            </div>
+            <div class="image-box" onclick="openModal('modal5')">
+                <img src="personal_project_image2.jpg" alt="Personal Project 2">
+                <p class="center-text">Personal Project Title 2</p>
+            </div>
+            <div class="image-box" onclick="openModal('modal6')">
+                <img src="personal_project_image3.jpg" alt="Personal Project 3">
+                <p class="center-text">Personal Project Title 3</p>
+            </div>
+            <!-- Add more image-box divs as needed -->
+        </div>
+    </div>
+</div>
+
+<!-- The Modals -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">×</span>
+        <video width="100%" controls>
+            <source src="group_project_video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Group Project Description 1</p>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">×</span>
+        <video width="100%" controls>
+            <source src="personal_project_video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Personal Project Description 1</p>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">×</span>
+        <video width="100%" controls>
+            <source src="personal_project_video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Personal Project Description 2</p>
+    </div>
+</div>
+
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">×</span>
+        <video width="100%" controls>
+            <source src="personal_project_video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Personal Project Description 3</p>
+    </div>
+</div>
+
+<script src="style.js"></script>
+</body>
+</html>
