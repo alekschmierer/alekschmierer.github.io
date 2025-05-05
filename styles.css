@@ -66,14 +66,14 @@ nav ul li a {
 .skills-projects-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;               /* space between columns */
+  gap: 2rem;               
   padding: 2rem 4vw;
-  align-items: stretch;    /* force children to equal height */
+  align-items: stretch;    
 }
 
 /* SKILLS COLUMN */
 .skills {
-  flex: 1 1 45%;           /* take up ~half width, shrink/grow */
+  flex: 1 1 45%;           
   display: flex;
   flex-direction: column;
 }
@@ -82,35 +82,35 @@ nav ul li a {
 .skill-text {
   display: flex;
   align-items: center;
-  gap: 1rem;               /* space between title & icons */
+  gap: 1rem;               
   margin-bottom: 1rem;
 }
 .skill-text h2 {
-  flex-shrink: 0;          /* prevent title from squeezing */
+  flex-shrink: 0;          
   font-size: 3rem;
   margin: 0;
 }
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;            /* space between icons */
+  gap: 0.75rem;            
 }
 .skill-icons img {
-  width: 3.5rem;           /* ~56px */
-  height: 3.5rem;          /* square for consistency */
+  width: 3.5rem;           
+  height: 3.5rem;          
   object-fit: contain;
 }
 
 /* Skills Detail Box */
 .skills-list {
-  flex: 1 1 auto;          /* fill remaining column height */
+  flex: 1 1 auto;          
   background-color: #F5F5F5;
-  font-size: larger;
   padding: 1.25rem;
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* spread the three sections */
+  justify-content: space-between; 
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
 }
 .skill-languages,
 .skill-pro-technologies,
@@ -125,7 +125,7 @@ nav ul li a {
 
 /* PROJECTS COLUMN */
 .projects {
-  flex: 1 1 45%;           /* take up ~half width */
+  flex: 1 1 45%;           
   display: flex;
   flex-direction: column;
 }
@@ -138,7 +138,7 @@ nav ul li a {
 
 /* Project Image Box */
 .project {
-  flex: 1 1 auto;          /* fill remaining column height */
+  flex: 1 1 auto;          
   background-color: #F5F5F5;
   display: flex;
   align-items: center;
