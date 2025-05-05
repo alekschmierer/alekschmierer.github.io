@@ -160,3 +160,52 @@ iframe {
   height: 100vh;
   border: none;
 }
+
+
+/*PROJECTS CSS*/
+/* Reusable “box” card style (same as on index.html) */
+.box {
+  background-color: #F5F5F5;
+  padding: 1.5rem;
+  border-radius: 0.625rem;            /* 10px */
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+/* Grid container for project thumbnails */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Individual project card */
+.image-box {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+.image-box:hover {
+  transform: translateY(-5px);
+}
+
+/* Thumbnail image */
+.image-box img {
+  width: 100%;
+  height: 200px;                      /* fixed height for uniform cards */
+  object-fit: cover;
+  display: block;
+}
+
+/* Caption below thumbnail */
+.image-box .center-text {
+  padding: 1rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: bold;
+  color: #2C2C2C;
+}

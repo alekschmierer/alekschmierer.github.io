@@ -1,96 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-<!-- Main Content -->
-<div class="main-content">
-    <div class="box" id="group-projects">
-        <h2>Group Projects</h2>
-        <div class="image-container">
-            <div class="image-box" onclick="openModal('modal1')">
-                <img src="images\EffortLoggerImage.png" alt="Group Project 1">
-                <p class="center-text">EffortLogger</p>
+    <div class="main-content">
+
+        <!-- Capstone Projects -->
+        <div class="box" id="group-projects">
+            <h2>Capstone Project</h2>
+            <div class="image-container">
+                <div class="image-box" onclick="openModal('modal1')">
+                    <img src="images/capstone.png" alt="Living In Silico x RxDock">
+                    <p class="center-text">Living In Silico x RxDock</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="box" id="personal-projects">
-        <h2>Personal/Class Projects</h2>
-        <div class="image-container">
-            <div class="image-box" onclick="openModal('modal4')">
-                <img src="images\dijkstras_algorithm_image.png" alt="Personal Project 1">
-                <p class="center-text">Dijkstra's Algorithm</p>
+
+        <!-- Personal Projects -->
+        <div class="box" id="personal-projects">
+            <h2>Personal Projects</h2>
+            <div class="image-container">
+                <div class="image-box" onclick="openModal('modal2')">
+                    <img src="images/blocky_project.png" alt="Blocky's Adventure">
+                    <p class="center-text">Blocky's Adventure</p>
+                </div>
+                <div class="image-box" onclick="openModal('modal3')">
+                    <img src="images/work_in_progress.png" alt="Work In Progress">
+                    <p class="center-text">Work In Progress</p>
+                </div>
+                <div class="image-box" onclick="openModal('modal4')">
+                    <img src="images/work_in_progress.png" alt="Work In Progress">
+                    <p class="center-text">Work In Progress</p>
+                </div>
             </div>
-            <div class="image-box" onclick="openModal('modal5')">
-                <img src="images\blocky_project.png" alt="Personal Project 2">
-                <p class="center-text">Blocky's Adventure</p>
-            </div>
-            <div class="image-box" onclick="openModal('modal6')">
-                <img src="personal_project_image3.jpg" alt="Personal Project 3">
-                <p class="center-text">Personal Project Title 3</p>
-            </div>
-            <!-- Add more image-box divs as needed -->
         </div>
-    </div>
-</div>
 
-<!-- The Modals -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal1')">×</span>
-        <video width="100%" controls>
-            <source src="group_project_video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>Group Project Description 1</p>
-    </div>
-</div>
+        <!-- Class Projects -->
+        <div class="box" id="personal-projects">
+            <h2>Class Projects</h2>
+            <div class="image-container">
+                <div class="image-box" onclick="openModal('modal5')">
+                    <img src="images/straightline_complier.png" alt="Personal Project 3">
+                    <p class="center-text">StraightLine IR Complier</p>
+                </div>
+                <div class="image-box" onclick="openModal('modal6')">
+                    <img src="images/dijkstras_algorithm_image.png" alt="Dijkstra's Algorithm">
+                    <p class="center-text">Dijkstra's Algorithm</p>
+                </div>
+                <div class="image-box" onclick="openModal('modal7')">
+                    <img src="images/EffortLoggerImage.png" alt="EffortLoggerV2">
+                    <p class="center-text">EffortLoggerV2</p>
+                </div>
+            </div>
+        </div>
 
-<div id="modal4" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal4')">×</span>
-        <video width="100%" controls>
-            <source src="personal_project_video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>Personal Project Description 1</p>
     </div>
-</div>
 
-<div id="modal5" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal5')">×</span>
-        <video width="100%" controls>
-            <source src="personal_project_video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>Personal Project Description 2</p>
-    </div>
-</div>
-
-<div id="modal6" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal6')">×</span>
-        <video width="100%" controls>
-            <source src="personal_project_video3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <p>Personal Project Description 3</p>
-    </div>
-</div>
-
-<script src="style.js"></script>
+    <script src="style.js"></script>
 </body>
+
 </html>
