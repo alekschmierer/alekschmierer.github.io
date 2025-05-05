@@ -248,3 +248,11 @@ iframe {
   font-size: clamp(1.25rem, 2vw, 1.5rem); 
   color: #333333;
 }
+
+/* Preserve layout on mobile */
+@media (max-width: 480px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;                
+  }
+}
