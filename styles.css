@@ -110,7 +110,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 2rem);
 }
 .skill-languages,
 .skill-pro-technologies,
