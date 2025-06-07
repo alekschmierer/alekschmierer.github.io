@@ -75,7 +75,7 @@ nav ul li a {
   align-items: stretch;
   overflow: hidden;
   padding: 1rem;
-  max-height: 35vh;
+  max-height: 40vh;
 }
 
 .skills,
@@ -253,7 +253,7 @@ iframe {
 /* Extra-large screens */
 @media (min-width: 1280px) {
   .skills-projects-container {
-    max-height: 35vh;
+    max-height: 40vh;
   }
   .intro {
     font-size: 1.4rem;
@@ -273,6 +273,6 @@ iframe {
     font-size: 1.3rem;
   }
   .skills-projects-container {
-    max-height: 30vh;
+    max-height: 40vh;
   }
 }
