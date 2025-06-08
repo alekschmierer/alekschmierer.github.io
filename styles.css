@@ -203,6 +203,14 @@ iframe {
   max-height: 250px;
 }
 
+.image-boxCapstone img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit:cover;
+  display: block;
+  max-height: 250px;
+}
+
 .image-box .center-text {
   padding: 1rem;
   font-size: clamp(1rem, 1.5vw, 1.25rem);
