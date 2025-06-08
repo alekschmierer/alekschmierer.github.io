@@ -175,10 +175,16 @@ iframe {
 }
 
 .image-container {
-  display: grid;
+  display: grid;  
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  font-size: 1rem;
   margin-top: 1rem;
+}
+
+.image-container p {
+  padding: 1rem;
+  font-size: 1.1rem;
 }
 
 .image-box {
