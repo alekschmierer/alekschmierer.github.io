@@ -267,3 +267,24 @@ iframe {
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   color: #333333;
 }
+
+.intro {
+  font-size: clamp(0.8rem, calc(1.2vw + 0.4vh), 1.5rem);
+}
+
+.skills-list {
+  font-size: clamp(0.75rem, calc(1vw + 0.25vh), 1.35rem);
+}
+
+.image-container p {
+  font-size: clamp(0.8rem, calc(0.8vw + 0.2vh), 1rem);
+}
+
+.contact-card h2 {
+  font-size: clamp(1.2rem, calc(1.8vw + 0.6vh), 2.2rem);
+}
+
+.contact-item .text {
+  font-size: clamp(0.9rem, calc(1.2vw + 0.4vh), 1.3rem);
+}
+
