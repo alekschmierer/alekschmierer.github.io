@@ -470,4 +470,21 @@ iframe {
   .resume-mobile {
     display: block;
   }
+
+  .contact-card {
+    padding: 6rem 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-item .text {
+    font-size: 1.2rem;
+  }
+
+  .contact-icon {
+    width: 2.5rem;
+  }
 }
