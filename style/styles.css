@@ -471,20 +471,33 @@ iframe {
     display: block;
   }
 
-  .contact-card {
-    padding: 6rem 2rem;
-  }
-
   .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
   }
 
-  .contact-item .text {
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: nowrap;
+  }
+
+  .contact-item .icon {
+    flex-shrink: 0;
     font-size: 1.2rem;
   }
 
-  .contact-icon {
-    width: 2.5rem;
+  .contact-item .text {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  .contact-item a {
+    text-decoration: none;
+    color: inherit;
+    word-break: break-all;
   }
 }
