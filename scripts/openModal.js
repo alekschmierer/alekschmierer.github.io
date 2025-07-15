@@ -4,5 +4,13 @@ function openModal(id) {
 }
 
 function closeModal(id) {
-    document.getElementById(id).style.display = 'none';
+    const modal = document.getElementById(id);
+    modal.style.display = 'none';
+
+    const iframe = modal.querySelector('iframe');
+    if (iframe) {
+        const src = iframe.src;
+        iframe.src = '';
+        iframe.src = src;
+    }
 }
