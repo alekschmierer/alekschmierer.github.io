@@ -34,26 +34,87 @@
         <div class="box" id="personal-projects">
             <h2>Projects</h2>
             <div class="image-container">
-                <div class="image-box" onclick="openModal('modal5')">
+                <div class="image-box" onclick="openModal('modal2')">
                     <img src="/images/straightline_complier.png" alt="Personal Project 3">
                     <p class="center-text">StraightLine IR Complier</p>
                 </div>
-                <div class="image-box" onclick="openModal('modal6')">
+                <div class="image-box" onclick="openModal('modal3')">
                     <img src="/images/dijkstras_algorithm_image.png" alt="Weighted Graph (Dijkstra's Algorithm)">
                     <p class="center-text">Weighted Graph (Dijkstra's Algorithm)</p>
                 </div>
-                <div class="image-box" onclick="openModal('modal7')">
+                <div class="image-box" onclick="openModal('modal4')">
                     <img src="/images/EffortLoggerImage.png" alt="EffortLoggerV2">
                     <p class="center-text">EffortLoggerV2</p>
                 </div>
-                <div class="image-box" onclick="openModal('modal8')">
+                <div class="image-box" onclick="openModal('modal5')">
                     <img src="/images/astroterra.png" alt="AstroTerra">
                     <p class="center-text">AstroTerra</p>
                 </div>
             </div>
         </div>
 
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/-iuIY6C1Kw4" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p>This video presents our Capstone.</p>
+            </div>
+        </div>
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/qs9EiszgS74" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p>This video presents</p>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/BWf3qrZ46mY" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p>This video presents</p>
+            </div>
+        </div>
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/1VhB25W5Pqo" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p>This video presents</p>
+            </div>
+        </div>
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/zq5X8HD8pd8" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p>This video presents</p>
+            </div>
+        </div>
     </div>
+    <script src="/scripts/openModal.js"></script>
 </body>
 
 </html>
