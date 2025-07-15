@@ -59,7 +59,6 @@ nav ul li a {
   gap: 1.5vw;
   margin: 1.5vh auto 1vh auto;
   flex-shrink: 0;
-  /* (max-height removed to allow taller content on large screens) */
 }
 
 .profile-pic img {
@@ -240,7 +239,7 @@ iframe {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
-  max-height: 250px;
+  max-height: 350px;
 }
 
 .image-boxCapstone .center-text {
@@ -250,7 +249,7 @@ iframe {
   color: #2C2C2C;
 }
 
-/* Contact Card (Unchanged) */
+/*Contact Card*/
 .contact-card {
   width: 90%;
   max-width: 1000px;
@@ -321,7 +320,7 @@ iframe {
 }
 
 
-/* Responsive adjustments for larger screens */
+/*larger screens*/
 @media (min-width: 1593px) {
   .profile-container {
     max-height: none;
@@ -340,6 +339,6 @@ iframe {
   }
 
   .skills-projects-container {
-    margin-bottom: 40px; /* Add more space below if needed */
+    margin-bottom: 40px;
   }
 }
