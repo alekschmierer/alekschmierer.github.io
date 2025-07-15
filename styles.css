@@ -277,7 +277,7 @@ iframe {
 }
 
 /* Responsive adjustments for larger screens */
-@media (min-width: 1920px) {
+@media (min-width: 1593px) {
   .profile-container {
     width: 87%; /* ~1672px on a 1920px-wide viewport */
     height: 25vh; /* approx 269px at 1080px height */
