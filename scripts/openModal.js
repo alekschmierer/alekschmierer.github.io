@@ -5,15 +5,19 @@ function openModal(id) {
 
 function closeModal(id) {
     const modal = document.getElementById(id);
+    const iframe = modal.querySelector('iframe');
+
     modal.style.display = 'none';
 
-    const iframe = modal.querySelector('iframe');
     if (iframe) {
         const src = iframe.src;
         iframe.src = '';
-        iframe.src = src;
+        setTimeout(() => {
+            iframe.src = src;
+        }, 100);
     }
 }
+
 
 window.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
