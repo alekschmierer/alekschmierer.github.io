@@ -1,37 +1,47 @@
-/*Setup*/
+/* Setup */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5; /*Spacing*/
+html, body {
+  width: 100vw;
   height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
   display: flex;
   flex-direction: column;
 }
 
 .container {
-  height: 100vh;
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/*Navigation Bar Style*/
+/* Navigation Bar Style */
 header {
   background-color: #2C2C2C;
-  padding: 1rem 2vw;
+  padding: 0.75rem 2vw;
+  flex-shrink: 0;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
+
 nav ul li {
-  margin: 0 1.25rem;
+  margin: 0 1rem;
 }
+
 nav ul li a {
   color: #fff;
   text-decoration: none;
@@ -39,27 +49,17 @@ nav ul li a {
   font-size: 1rem;
 }
 
-/* Profile Picture + Text */
+/* Profile Container */
 .profile-container {
-  height: 28%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   gap: 1.5vw;
-  overflow: hidden;
-}
-
-/* Profile Text Box */
-.intro {
-  background-color: #F5F5F5;
-  height: 10vw;
-  padding: 0.5rem 2vw;
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  font-size: clamp(1rem, 1.7vw, 1.5rem);
+  margin: 1.5vh auto 1vh auto;
+  flex-shrink: 0;
+  max-height: 30vh; /* Increased height */
 }
 
 .profile-pic img {
@@ -71,66 +71,91 @@ nav ul li a {
   box-shadow: 0 0.4375rem 0.625rem rgba(0, 0, 0, 0.3);
 }
 
+.intro {
+  background-color: #F5F5F5;
+  padding: 1rem 2vw;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.8rem, calc(1.2vw + 0.4vh), 1.2rem);
+}
+
 /* Skills & Projects Container */
 .skills-projects-container {
-  width: 100%;
-  height: 70%;
-  max-height: 70%;
+  width: 80%;
   display: flex;
-  flex: 1;
-  flex-wrap: nowrap;
-  gap: 1rem;
+  gap: 2rem;
+  justify-content: center;
   align-items: stretch;
-  overflow: hidden;
-  padding: 1rem;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  flex-grow: 1;
+  max-height: calc(100vh - 30vh - 4rem); /* Reduced to match taller profile */
 }
-.skills,
-.projects {
-  flex: 1;
+
+/* Skills */
+.skills {
+  flex: 2 1 62%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
-.skill-text,
-.project-text {
+
+.skills-list {
+  background-color: #F5F5F5;
+  padding: 1rem;
+  font-size: clamp(0.75rem, calc(1vw + 0.25vh), 1.2rem);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.625rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  word-wrap: break-word;
+}
+
+.skill-text {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
+
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
+
 .skill-icons img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   object-fit: contain;
 }
-.skills-list {
-  flex: 1 1 auto;
-  background-color: #F5F5F5;
-  padding: 1em;
-  font-size: clamp(0.9rem, 1.2vw, 1.4rem);
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
-  border-radius: 0.625rem;
+
+/* Projects */
+.projects {
+  flex: 1 1 38%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  word-wrap: break-word;
 }
 
 .project {
-  flex: 1;
   background-color: #F5F5F5;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
   border-radius: 0.625rem;
-  overflow: hidden;
   padding: 0.5rem;
+  text-align: center;
+  height: 100%;
+}
+
+.project-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .project img {
@@ -140,6 +165,7 @@ nav ul li a {
   display: block;
 }
 
+/* Additional Styles */
 iframe {
   width: 100%;
   height: 100vh;
@@ -153,20 +179,29 @@ iframe {
   box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
   margin-bottom: 2rem;
 }
+.main-content, .box {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
 
 .main-image-container {
   display: grid;
-  grid-template-columns: (auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .image-container {
   display: grid;  
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, calc(0.8vw + 0.2vh), 1rem);
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .image-container p {
@@ -174,7 +209,7 @@ iframe {
   font-size: 1.1rem;
 }
 
-.image-box {
+.image-box, .image-boxCapstone {
   background-color: #fff;
   border-radius: 0.625rem;
   overflow: hidden;
@@ -184,44 +219,14 @@ iframe {
   text-align: center;
 }
 
-.image-box:hover {
+.image-box:hover, .image-boxCapstone:hover {
   transform: translateY(-5px);
 }
 
-.image-box img {
+.image-box img, .image-boxCapstone img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit:fill;
-  display: block;
-  max-height: 250px;
-}
-
-
-.image-boxCapstone .center-text {
-  padding: 1rem;
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  font-weight: bold;
-  color: #2C2C2C;
-}
-
-.image-boxCapstone {
-  background-color: #fff;
-  border-radius: 0.625rem;
-  overflow: hidden;
-  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  text-align: center;
-}
-
-.image-boxCapstone:hover {
-  transform: translateY(-5px);
-}
-
-.image-boxCapstone img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit:cover;
+  object-fit: cover;
   display: block;
   max-height: 250px;
 }
@@ -233,6 +238,7 @@ iframe {
   color: #2C2C2C;
 }
 
+/* Contact Card (Not modified as per your instruction) */
 .contact-card {
   width: 90%;
   max-width: 1000px;
@@ -246,7 +252,7 @@ iframe {
 }
 
 .contact-card h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.2rem, calc(1.8vw + 0.6vh), 2.2rem);
   margin-bottom: 2rem;
   color: #2C2C2C;
   text-align: center;
@@ -264,27 +270,6 @@ iframe {
 }
 
 .contact-item .text {
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-size: clamp(0.9rem, calc(1.2vw + 0.4vh), 1.3rem);
   color: #333333;
 }
-
-.intro {
-  font-size: clamp(0.8rem, calc(1.2vw + 0.4vh), 1.5rem);
-}
-
-.skills-list {
-  font-size: clamp(0.75rem, calc(1vw + 0.25vh), 1.35rem);
-}
-
-.image-container p {
-  font-size: clamp(0.8rem, calc(0.8vw + 0.2vh), 1rem);
-}
-
-.contact-card h2 {
-  font-size: clamp(1.2rem, calc(1.8vw + 0.6vh), 2.2rem);
-}
-
-.contact-item .text {
-  font-size: clamp(0.9rem, calc(1.2vw + 0.4vh), 1.3rem);
-}
-
