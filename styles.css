@@ -279,16 +279,22 @@ iframe {
 /* Responsive adjustments for larger screens */
 @media (min-width: 1593px) {
   .profile-container {
-    width: 87%; /* ~1672px on a 1920px-wide viewport */
-    height: 25vh; /* approx 269px at 1080px height */
     max-height: none;
+    padding: 2rem 1rem;
+    gap: 3vw;
   }
+
   .profile-pic img {
-    width: 16vw;
-    height: 16vw;
+    width: 12vw;
+    height: 12vw;
   }
+
   .intro {
-    padding: 1.5rem 2vw;
-    font-size: clamp(1rem, calc(1.5vw + 0.5vh), 1.5rem);
+    font-size: clamp(1.2rem, 1.5vw + 0.6vh, 2rem);
+    padding: 2rem 3vw;
+  }
+
+  .skills-projects-container {
+    margin-bottom: 40px; /* Add more space below if needed */
   }
 }
