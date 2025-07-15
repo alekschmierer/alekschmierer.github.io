@@ -14,3 +14,11 @@ function closeModal(id) {
         iframe.src = src;
     }
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const modalId = params.get("modal");
+    if (modalId) {
+        openModal(modalId);
+    }
+});
